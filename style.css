@@ -1,0 +1,708 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1440px;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 157px 0 112px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+body header nav {
+  width: 900px;
+}
+body header nav .nav-span {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+}
+body header nav .nav-span li {
+  margin-right: 28px;
+}
+body header nav .nav-span li .nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+body header nav .nav-span li .nav-link:hover {
+  color: #b00000;
+  border-bottom: 2px solid #b00000;
+}
+body header nav .nav-span div {
+  display: flex;
+}
+body header nav .nav-span div .phone {
+  display: flex;
+  align-items: center;
+  border-left: 2px solid #808080;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+body header nav .nav-span div .phone:hover {
+  color: #b00000;
+}
+body header nav .nav-span .dropdown {
+  position: relative;
+}
+body header nav .nav-span .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -90px;
+  background-color: #b00000;
+  list-style: none;
+  width: 300px;
+}
+body header nav .nav-span .dropdown .dropdown-content li {
+  padding: 0;
+  margin: 0;
+}
+body header nav .nav-span .dropdown .dropdown-content li .drop-link {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+body header nav .nav-span .dropdown .dropdown-content li .drop-link:hover {
+  background-color: #808080;
+}
+body header nav .nav-span .dropdown:hover .dropdown-content {
+  display: block;
+}
+body main .sec1-hero {
+  display: flex;
+  margin-bottom: 79px;
+  height: calc(100vh - 64px);
+  padding: 80px 112px 0;
+}
+body main .sec1-hero .hero-left {
+  width: 50%;
+}
+body main .sec1-hero .hero-left .hero-left-top-nav {
+  width: 248px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #808080;
+}
+body main .sec1-hero .hero-left .hero-left-top-nav button {
+  text-decoration: none;
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  color: #808080;
+  margin-right: 23px;
+}
+body main .sec1-hero .hero-left .hero-left-top-nav button:hover {
+  color: #b00000;
+}
+body main .sec1-hero .hero-left .hero-text-big {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+body main .sec1-hero .hero-left .hero-text-small {
+  font-size: 16px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 28px;
+  width: 448px;
+  margin: 34px 0 60px;
+}
+body main .sec1-hero .hero-left .hero-button-container {
+  display: flex;
+}
+body main .sec1-hero .hero-left .hero-button-container .hero-button {
+  text-decoration: none;
+  margin-right: 24px;
+  width: 160px;
+  height: 48px;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #b00000;
+  color: white;
+}
+body main .sec1-hero .hero-left .hero-button-container .hero-btn {
+  width: 160px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+body main .sec1-hero .hero-right {
+  position: relative;
+  background-image: url("./images/hero-img.png");
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: cover;
+}
+body main .sec1-hero .hero-right .triangle-one {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #b00000;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 50px;
+}
+body main .sec1-hero .hero-right .triangle-two {
+  width: 72px;
+  height: 72px;
+  display: block;
+  border-left: 36px solid transparent;
+  border-right: 36px solid #b00000;
+  border-bottom: 36px solid #b00000;
+  border-top: 36px solid transparent;
+  position: absolute;
+  right: -30px;
+  bottom: 50px;
+}
+body main .sec1-hero .hero-right .triangle-three {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid #b00000;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: absolute;
+  bottom: 150px;
+  left: -20px;
+}
+body main .sec1-hero .hero-right:hover .triangle-three {
+  transform: translatey(30px);
+  transition: 3s;
+}
+body main .sec1-hero .hero-right:hover .triangle-two {
+  transform: rotate(360deg);
+  transition: 6s;
+}
+body main .sec1-hero .hero-right:hover .triangle-one {
+  transform: translate(-50px, -65px);
+  transition: 3s;
+}
+body main .sec2 {
+  margin: 0 82px 133px 74px;
+}
+body main .sec2 .sec2-group1-container {
+  display: flex;
+  justify-content: space-between;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-left {
+  width: 50%;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-small-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #18191f;
+  padding: 20px 5px 30px 0;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos {
+  width: 594px;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 {
+  display: flex;
+  justify-content: flex-end;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
+  width: 125px;
+  height: 50px;
+  margin: 0 70px 20px 0;
+}
+body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-stubborn-img {
+  width: 125px;
+  height: 50px;
+}
+body main .sec2 .sec2-group2-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+body main .sec2 .sec2-group2-container .sec2-flex-items {
+  width: 252px;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+body main .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-big-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body main .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-small-text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300px;
+}
+body main .sec2 .sec2-group2-container .biggest-item {
+  width: 259px;
+  height: 223px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .sec2 .sec2-group2-container .biggest-item .sec2-biggest-text {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+body main .sec2 .sec2-group2-container .biggest-item .sec2-smallest-text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+body main .sec3 .sec3-group1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 180px;
+}
+body main .sec3 .sec3-group1 .sec3-big-text {
+  font-size: 50px;
+  font-weight: 600;
+}
+body main .sec3 .sec3-group1 .sec3-small-text {
+  font-size: 25px;
+  margin: 38px 0 67px;
+}
+body main .sec3 .sec3-group1 .sec3-monthly {
+  display: flex;
+  align-items: center;
+  margin-bottom: 85px;
+}
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-monthly-guy {
+  margin-right: 20px;
+}
+body main .sec3 .sec3-group1 .sec3-monthly label {
+  display: inline-block;
+  width: 93px;
+  height: 50px;
+  border-radius: 40px;
+  position: relative;
+  margin-right: 26px;
+}
+body main .sec3 .sec3-group1 .sec3-monthly span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ccc;
+  border-radius: 40px;
+  transition: 0.25s;
+}
+body main .sec3 .sec3-group1 .sec3-monthly input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  width: 43px;
+  height: 43px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: 0.25s;
+}
+body main .sec3 .sec3-group1 .sec3-monthly input:checked {
+  transform: translatex(40px);
+}
+body main .sec3 .sec3-group1 .sec3-monthly input:checked + span {
+  background-color: #b00000;
+}
+body main .sec3 .sec3-group1 .sec3-monthly .discount {
+  background-color: #ffe87a;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: small;
+}
+body main .sec3 .sec3-group1 .basic-pre {
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid #808080;
+}
+body main .sec3 .sec3-group2-flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1097px;
+  padding: 85px 0;
+  margin: 0 121px;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
+  height: 716px;
+  width: 299px;
+  border: 2px solid #808080;
+  padding: 34px;
+  border-radius: 10px;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-small-para {
+  font-size: 12px;
+  margin: 11px 0 28px;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-big-cash {
+  font-size: 42px;
+  font-weight: 600;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .per-mon {
+  font-size: 14px;
+  font-weight: 300;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .hero-btn {
+  width: 228px;
+  height: 50px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  margin: 35px 0;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul {
+  list-style: none;
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li {
+  color: #808080;
+  display: flex;
+  align-items: center;
+}
+body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li img {
+  margin-right: 24px;
+}
+body main .sec4 {
+  padding: 0 104px 0 142px;
+}
+body main .sec4 .sec4-group1 {
+  display: flex;
+  margin-bottom: 84px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left {
+  width: 597px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-top-box {
+  padding: 45px 0 24px;
+  background-image: url("./images/Quote Mark.png");
+  background-repeat: no-repeat;
+  width: 515px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-top-box p {
+  font-size: 48px;
+  font-weight: 800;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
+  width: 350px;
+  height: 428px;
+  box-shadow: 0 0 7px #808080;
+  padding: 0 32px 0 32px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .jbnl-logo-img {
+  margin-left: 40px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark {
+  display: flex;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
+  width: 20px;
+  height: 20px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div {
+  padding-left: 6px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div p {
+  line-height: 32px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div h3 {
+  color: #18191f;
+  margin-top: 24px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div .sec4-job {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right {
+  margin-left: 30px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
+  width: 445px;
+  height: 340px;
+  box-shadow: 0 0 7px #808080;
+  padding: 40px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .jbnl-logo-img {
+  margin-left: 40px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark {
+  display: flex;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark .stubborn-quote-img {
+  width: 20px;
+  height: 20px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div {
+  padding-left: 20px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div p {
+  line-height: 32px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div h3 {
+  color: #18191f;
+  margin-top: 24px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div .sec4-job {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
+  width: 350px;
+  height: 276px;
+  box-shadow: 0 0 7px #808080;
+  padding: 0 32px;
+  margin-top: 32px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .jbnl-logo-img {
+  margin-left: 40px;
+  height: 110px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark {
+  display: flex;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark .stubborn-quote-img {
+  width: 20px;
+  height: 20px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div {
+  padding-left: 20px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div p {
+  line-height: 32px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div h3 {
+  color: #18191f;
+  margin-top: 24px;
+}
+body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div .sec4-job {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+}
+body main .sec4 .sec4-group2 {
+  height: 240px;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container {
+  display: flex;
+  justify-content: space-between;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left {
+  width: 50%;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-big-text {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-small-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #18191f;
+  padding: 20px 5px 30px 0;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos {
+  width: 594px;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 {
+  display: flex;
+  justify-content: flex-end;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
+  width: 125px;
+  height: 120px;
+  margin: 0 70px 0 0;
+}
+body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-stubborn-img {
+  width: 125px;
+  height: 50px;
+}
+body main .sec5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 100px;
+  height: 432px;
+  background-color: #e5ecf5;
+  position: relative;
+}
+body main .sec5 h1 {
+  font-size: 64px;
+  width: 1024px;
+  text-align: center;
+}
+body main .sec5 .hero-button {
+  text-decoration: none;
+  margin-top: 40px;
+  width: 208px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #b00000;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body main .sec5 .hero-button img {
+  margin-right: 10px;
+}
+body main .sec5 .hero-button span {
+  font-size: 14px;
+}
+body main .sec5 .hero-button:hover {
+  background-color: #3d0101;
+  transition: 2s;
+  transform: translatey(20px);
+}
+body main .sec5 .triangle-one {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #b00000;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: absolute;
+  left: 450px;
+  top: 0;
+}
+body main .sec5 .triangle-two {
+  width: 72px;
+  height: 72px;
+  display: block;
+  border-left: 36px solid transparent;
+  border-right: 36px solid #b00000;
+  border-bottom: 36px solid #b00000;
+  border-top: 36px solid transparent;
+  position: absolute;
+  right: -30px;
+  bottom: 50px;
+}
+body main .sec5 .triangle-three {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid #b00000;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: absolute;
+  bottom: 150px;
+  left: -20px;
+}
+body main .sec5:hover .triangle-three {
+  transform: translatey(150px);
+  transition: 2s;
+}
+body main .sec5:hover .triangle-two {
+  transform: rotate(360deg);
+  transition: 3s;
+}
+body main .sec5:hover .triangle-one {
+  transform: translatex(500px);
+  transition: 3s;
+}
+
+footer {
+  background-color: #b00000;
+  height: 536px;
+  color: white;
+  padding: 80px 90px;
+}
+footer .footer-nav-container {
+  display: flex;
+  margin-bottom: 104px;
+}
+footer .footer-nav-container .footer-logo-group {
+  width: 296px;
+  height: 240px;
+  margin-right: 100px;
+}
+footer .footer-nav-container .footer-logo-group p {
+  line-height: 32px;
+  padding-top: 12px;
+}
+footer .footer-nav-container .footer-nav-items {
+  width: 144px;
+  margin-right: 70px;
+}
+footer .footer-nav-container .footer-nav-items li {
+  list-style: none;
+  margin-top: 24px;
+}
+footer .footer-nav-container .footer-nav-stub {
+  width: 144px;
+}
+footer .footer-nav-container .footer-nav-stub li {
+  list-style: none;
+  margin-top: 24px;
+}
+footer .copy-down p {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
