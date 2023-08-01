@@ -674,6 +674,10 @@ footer {
   color: white;
   padding: 80px 90px;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+}
 footer .footer-nav-container {
   display: flex;
   margin-bottom: 104px;
