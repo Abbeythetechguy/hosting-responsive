@@ -318,10 +318,14 @@ body main .sec3 .sec3-group1 .sec3-monthly {
   align-items: center;
   margin-bottom: 85px;
 }
-body main .sec3 .sec3-group1 .sec3-monthly .sec3-monthly-guy {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part {
+  display: flex;
+  align-items: center;
+}
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part .sec3-monthly-guy {
   margin-right: 20px;
 }
-body main .sec3 .sec3-group1 .sec3-monthly label {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part label {
   display: inline-block;
   width: 93px;
   height: 50px;
@@ -329,7 +333,7 @@ body main .sec3 .sec3-group1 .sec3-monthly label {
   position: relative;
   margin-right: 26px;
 }
-body main .sec3 .sec3-group1 .sec3-monthly span {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part span {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -339,7 +343,7 @@ body main .sec3 .sec3-group1 .sec3-monthly span {
   border-radius: 40px;
   transition: 0.25s;
 }
-body main .sec3 .sec3-group1 .sec3-monthly input {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -354,13 +358,13 @@ body main .sec3 .sec3-group1 .sec3-monthly input {
   background-color: #fff;
   transition: 0.25s;
 }
-body main .sec3 .sec3-group1 .sec3-monthly input:checked {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part input:checked {
   transform: translatex(40px);
 }
-body main .sec3 .sec3-group1 .sec3-monthly input:checked + span {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part input:checked + span {
   background-color: #b00000;
 }
-body main .sec3 .sec3-group1 .sec3-monthly .discount {
+body main .sec3 .sec3-group1 .sec3-monthly .sec3-mon-part .discount {
   background-color: #ffe87a;
   padding: 5px 10px;
   border-radius: 20px;
@@ -720,6 +724,7 @@ body footer .copy-down p {
 @media screen and (max-width: 1024px) {
   body {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid red;
   }
   body header {
     display: flex;
@@ -796,15 +801,7 @@ body footer .copy-down p {
     width: 130px;
     padding: 10px;
   }
-  body main .sec1-hero .hero-left .hero-right {
-    position: relative;
-    background-image: url("./images/hero-img.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 45%;
-    border: 1px solid red;
-  }
-  body main .sec1-hero .hero-left .hero-right .triangle-one {
+  body main .sec1-hero .hero-right .triangle-one {
     width: 30px;
     height: 30px;
     border-left: 15px solid transparent;
@@ -812,7 +809,7 @@ body footer .copy-down p {
     border-bottom: 15px solid #b00000;
     border-top: 15px solid transparent;
   }
-  body main .sec1-hero .hero-left .hero-right .triangle-one .triangle-two {
+  body main .sec1-hero .hero-right .triangle-one .triangle-two {
     width: 60px;
     height: 60px;
     border-left: 30px solid transparent;
@@ -820,7 +817,7 @@ body footer .copy-down p {
     border-bottom: 30px solid #b00000;
     border-top: 30px solid transparent;
   }
-  body main .sec1-hero .hero-left .hero-right .triangle-one .triangle-three {
+  body main .sec1-hero .hero-right .triangle-one .triangle-three {
     width: 30px;
     height: 30px;
     border-left: 15px solid #b00000;
@@ -828,513 +825,55 @@ body footer .copy-down p {
     border-bottom: 15px solid #b00000;
     border-top: 15px solid transparent;
   }
-  body main .sec1-hero .hero-left .hero-right .triangle-one:hover .triangle-three {
+  body main .sec1-hero .hero-right .triangle-one:hover .triangle-three {
     transform: translatey(30px);
     transition: 3s;
   }
-  body main .sec1-hero .hero-left .hero-right .triangle-one:hover .triangle-two {
+  body main .sec1-hero .hero-right .triangle-one:hover .triangle-two {
     transform: rotate(360deg);
     transition: 6s;
   }
-  body main .sec1-hero .hero-left .hero-right .triangle-one:hover .triangle-one {
+  body main .sec1-hero .hero-right .triangle-one:hover .triangle-one {
     transform: translate(-50px, -65px);
     transition: 3s;
   }
-  body main .sec1-hero .hero-left .sec2 {
-    margin: 0 0 133px;
+  body main .sec2 {
+    margin: 0 0 93px;
   }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-left {
+  body main .sec2 .sec2-group1-container .sec2-group1-left {
     width: 50%;
   }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-small-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #18191f;
-    padding: 20px 5px 30px 0;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-right {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos {
-    width: 594px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
-    width: 125px;
-    height: 50px;
-    margin: 0 70px 20px 0;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-stubborn-img {
-    width: 125px;
-    height: 50px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .sec2-flex-items {
-    width: 252px;
-    height: 223px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 30px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-big-text {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-small-text {
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 300px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .biggest-item {
-    width: 259px;
-    height: 223px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .biggest-item .sec2-biggest-text {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  body main .sec1-hero .hero-left .sec2 .sec2-group2-container .biggest-item .sec2-smallest-text {
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-big-text {
-    font-size: 50px;
-    font-weight: 600;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-small-text {
-    font-size: 25px;
-    margin: 38px 0 67px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly {
-    display: flex;
-    align-items: center;
-    margin-bottom: 85px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly .sec3-monthly-guy {
-    margin-right: 20px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly label {
-    display: inline-block;
-    width: 93px;
-    height: 50px;
-    border-radius: 40px;
-    position: relative;
-    margin-right: 26px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly span {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #ccc;
-    border-radius: 40px;
-    transition: 0.25s;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly input {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    margin: 0;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-    width: 43px;
-    height: 43px;
-    border-radius: 100%;
-    background-color: #fff;
-    transition: 0.25s;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly input:checked {
-    transform: translatex(40px);
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly input:checked + span {
-    background-color: #b00000;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .sec3-monthly .discount {
-    background-color: #ffe87a;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: small;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group1 .basic-pre {
-    display: flex;
-    justify-content: space-evenly;
-    width: 600px;
-    font-size: 30px;
-    font-weight: 600;
-    border-bottom: 2px solid #808080;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-boss {
-    margin: 0 115px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
-    height: 716px;
-    width: 299px;
-    border: 2px solid #808080;
-    padding: 34px;
-    border-radius: 10px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-small-para {
-    font-size: 12px;
-    margin: 11px 0 28px;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-big-cash {
-    font-size: 42px;
-    font-weight: 600;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .per-mon {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .hero-btn {
-    width: 228px;
-    height: 50px;
-    background: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    margin: 35px 0;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul {
-    list-style: none;
-    height: 336px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li {
-    color: #808080;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .hero-left .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li img {
-    margin-right: 24px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 {
-    display: flex;
-    margin-bottom: 84px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left {
-    width: 597px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-top-box {
-    padding: 45px 0 24px;
-    background-image: url("./images/Quote Mark.png");
-    background-repeat: no-repeat;
-    width: 515px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-top-box p {
-    font-size: 48px;
-    font-weight: 800;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
-    width: 350px;
-    height: 428px;
-    box-shadow: 0 0 7px #808080;
-    padding: 0 32px 0 32px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .jbnl-logo-img {
-    margin-left: 40px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div {
-    padding-left: 6px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right {
-    margin-left: 30px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
-    width: 445px;
-    height: 340px;
-    box-shadow: 0 0 7px #808080;
-    padding: 40px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .jbnl-logo-img {
-    margin-left: 40px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div {
-    padding-left: 20px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
-    width: 350px;
-    height: 276px;
-    box-shadow: 0 0 7px #808080;
-    padding: 0 32px;
-    margin-top: 32px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .jbnl-logo-img {
-    margin-left: 40px;
-    height: 110px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div {
-    padding-left: 20px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 {
-    height: 240px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left {
-    width: 50%;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-big-text {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-small-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #18191f;
-    padding: 20px 5px 30px 0;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos {
-    width: 594px;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
-    width: 125px;
-    height: 120px;
-    margin: 0 70px 0 0;
-  }
-  body main .sec1-hero .hero-left .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-stubborn-img {
-    width: 125px;
-    height: 50px;
-  }
-  body main .sec1-hero .hero-left .sec5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 100px;
-    height: 432px;
-    background-color: #e5ecf5;
-    position: relative;
-  }
-  body main .sec1-hero .hero-left .sec5 h1 {
-    font-size: 64px;
-    width: 1024px;
-    text-align: center;
-  }
-  body main .sec1-hero .hero-left .sec5 .hero-button {
-    text-decoration: none;
-    margin-top: 40px;
-    width: 208px;
-    height: 48px;
-    border-radius: 8px;
-    padding: 12px;
-    background-color: #b00000;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .hero-left .sec5 .hero-button img {
-    margin-right: 10px;
-  }
-  body main .sec1-hero .hero-left .sec5 .hero-button span {
-    font-size: 14px;
-  }
-  body main .sec1-hero .hero-left .sec5 .hero-button:hover {
-    background-color: #3d0101;
-    transition: 2s;
-    transform: translatey(20px);
-  }
-  body main .sec1-hero .hero-left .sec5 .triangle-one {
-    width: 40px;
-    height: 40px;
-    display: block;
-    border-left: 20px solid transparent;
-    border-right: 20px solid #b00000;
-    border-bottom: 20px solid #b00000;
-    border-top: 20px solid transparent;
-    position: absolute;
-    left: 450px;
-    top: 0;
-  }
-  body main .sec1-hero .hero-left .sec5 .triangle-two {
-    width: 72px;
-    height: 72px;
-    display: block;
-    border-left: 36px solid transparent;
-    border-right: 36px solid #b00000;
-    border-bottom: 36px solid #b00000;
-    border-top: 36px solid transparent;
-    position: absolute;
-    right: -30px;
-    bottom: 50px;
-  }
-  body main .sec1-hero .hero-left .sec5 .triangle-three {
-    width: 40px;
-    height: 40px;
-    display: block;
-    border-left: 20px solid #b00000;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #b00000;
-    border-top: 20px solid transparent;
-    position: absolute;
-    bottom: 150px;
-    left: -20px;
-  }
-  body main .sec1-hero .hero-left .sec5:hover .triangle-three {
-    transform: translatey(150px);
-    transition: 2s;
-  }
-  body main .sec1-hero .hero-left .sec5:hover .triangle-two {
-    transform: rotate(360deg);
-    transition: 3s;
-  }
-  body main .sec1-hero .hero-left .sec5:hover .triangle-one {
-    transform: translatex(500px);
-    transition: 3s;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left {
-    width: 50%;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
+  body main .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
     font-size: 38px;
     font-weight: 800;
     line-height: 54px;
   }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-small-text {
+  body main .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-small-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    padding: 20px 5px 30px 0;
+    padding: 20px 20px 30px 0;
   }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right {
+  body main .sec2 .sec2-group1-container .sec2-group1-right {
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos {
+  body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos {
     width: 400px;
   }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
+  body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
     width: 95px;
     height: 50px;
     margin: 0 40px 20px 0;
   }
-  body main .sec1-hero .sec2 .sec2-group2-container {
+  body main .sec2 .sec2-group2-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
   }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items {
+  body main .sec2 .sec2-group2-container .sec2-flex-items {
     width: 290px;
     height: 223px;
     display: flex;
@@ -1343,164 +882,164 @@ body footer .copy-down p {
     justify-content: space-between;
     margin: 0 10px;
   }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items img {
+  body main .sec2 .sec2-group2-container .sec2-flex-items img {
     width: 60px;
     height: 60px;
   }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-big-text {
+  body main .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-big-text {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
   }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-small-text {
+  body main .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-small-text {
     font-size: 12px;
     line-height: 18px;
     font-weight: 300px;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-big-text {
+  body main .sec3 .sec3-group1 .sec3-big-text {
     font-size: 40px;
     font-weight: 600;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-small-text {
+  body main .sec3 .sec3-group1 .sec3-small-text {
     font-size: 20px;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly {
+  body main .sec3 .sec3-group1 .sec3-monthly {
     margin-bottom: 75px;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly label {
+  body main .sec3 .sec3-group1 .sec3-monthly label {
     width: 73px;
     height: 40px;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly input {
+  body main .sec3 .sec3-group1 .sec3-monthly input {
     width: 33px;
     height: 33px;
   }
-  body main .sec1-hero .sec3 .sec3-group1 .basic-pre {
+  body main .sec3 .sec3-group1 .basic-pre {
     width: 500px;
     font-size: 25px;
     font-weight: 600;
     border-bottom: 2px solid #808080;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container {
+  body main .sec3 .sec3-group2-flex-container {
     padding: 40px 0;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-boss {
+  body main .sec3 .sec3-group2-flex-container .sec3-boss {
     margin: 0 55px;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
+  body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
     height: 716px;
     width: 250px;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-small-para {
+  body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-small-para {
     font-size: 12px;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-big-cash {
+  body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-big-cash {
     font-size: 32px;
     font-weight: 600;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .per-mon {
+  body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .per-mon {
     font-size: 14px;
     font-weight: 300;
   }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .hero-btn {
+  body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .hero-btn {
     width: 180px;
     height: 50px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 {
+  body main .sec4 .sec4-group1 {
     margin-bottom: 64px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left {
+  body main .sec4 .sec4-group1 .sec4-group1-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-top-box {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-top-box {
     padding: 45px 0 24px;
     width: 415px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-top-box p {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-top-box p {
     font-size: 40px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
     width: 330px;
     height: 400px;
     padding: 0 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
     width: 20px;
     height: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div {
     padding-left: 6px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div p {
+  body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div p {
     line-height: 32px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right {
+  body main .sec4 .sec4-group1 .sec4-group1-right {
     margin-left: 30px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
+  body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
     width: 400px;
     height: 300px;
     padding: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark {
+  body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark {
     display: flex;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark .stubborn-quote-img {
+  body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark .stubborn-quote-img {
     width: 20px;
     height: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div {
+  body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div {
     padding-left: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div p {
+  body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div p {
     line-height: 29px;
     font-size: 15px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
+  body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
     width: 330px;
     height: 256px;
     box-shadow: 0 0 7px #808080;
     padding: 0 20px;
     margin-top: 32px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark {
+  body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark {
     display: flex;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark .stubborn-quote-img {
+  body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark .stubborn-quote-img {
     width: 20px;
     height: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div {
+  body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div {
     padding-left: 20px;
   }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div p {
+  body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div p {
     line-height: 20px;
     font-size: 15px;
   }
-  body main .sec1-hero .sec4 .sec4-group2 {
+  body main .sec4 .sec4-group2 {
     height: 240px;
   }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-big-text {
+  body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-big-text {
     font-size: 38px;
   }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-small-text {
+  body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-small-text {
     font-size: 16px;
   }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos {
+  body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos {
     width: 430px;
   }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
+  body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
     width: 95px;
     height: 100px;
     margin: 0 40px 0 0;
   }
-  body main .sec1-hero .sec5 {
+  body main .sec5 {
     height: 432px;
   }
-  body main .sec1-hero .sec5 h1 {
+  body main .sec5 h1 {
     font-size: 64px;
     width: 1024px;
     text-align: center;
@@ -1515,34 +1054,26 @@ body footer .copy-down p {
   body footer .footer-nav-container .footer-logo-group p {
     line-height: 22px;
     padding-top: 12px;
-    font-size: 13px;
+    font-size: 10px;
   }
-  body footer .footer-nav-container .footer-nav-items {
-    width: 200px;
-    margin-right: 20px;
+  body footer .footer-nav-container .foot-nav-item-group .footer-nav-items {
+    width: 144px;
+    margin-right: 10px;
   }
-  body footer .footer-nav-container .footer-nav-items li {
+  body footer .footer-nav-container .foot-nav-item-group .footer-nav-items li {
     list-style: none;
     margin-top: 24px;
     font-size: 14px;
   }
-  body footer .footer-nav-container .footer-nav-stub {
+  body footer .footer-nav-container .foot-nav-item-group .footer-nav-stub {
     width: 144px;
   }
-  body footer .footer-nav-container .footer-nav-stub li {
+  body footer .footer-nav-container .foot-nav-item-group .footer-nav-stub li {
     list-style: none;
     margin-top: 24px;
   }
-  body footer .copy-down p {
-    display: flex;
-    align-items: center;
-  }
 }
 @media screen and (max-width: 425px) {
-  body {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white;
-  }
   body header {
     display: flex;
     justify-content: space-between;
@@ -1635,468 +1166,6 @@ body footer .copy-down p {
   }
   body main .sec1-hero .hero-right .triangle-three {
     display: none;
-  }
-  body main .sec1-hero .sec2 {
-    margin: 0 0 133px;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left {
-    width: 50%;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-small-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #18191f;
-    padding: 20px 5px 30px 0;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos {
-    width: 594px;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
-    width: 125px;
-    height: 50px;
-    margin: 0 70px 20px 0;
-  }
-  body main .sec1-hero .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-stubborn-img {
-    width: 125px;
-    height: 50px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items {
-    width: 252px;
-    height: 223px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 30px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-big-text {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .sec2-flex-items .sec2-flex-items-small-text {
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 300px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .biggest-item {
-    width: 259px;
-    height: 223px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .biggest-item .sec2-biggest-text {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  body main .sec1-hero .sec2 .sec2-group2-container .biggest-item .sec2-smallest-text {
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-big-text {
-    font-size: 50px;
-    font-weight: 600;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-small-text {
-    font-size: 25px;
-    margin: 38px 0 67px;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly {
-    display: flex;
-    align-items: center;
-    margin-bottom: 85px;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly .sec3-monthly-guy {
-    margin-right: 20px;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly label {
-    display: inline-block;
-    width: 93px;
-    height: 50px;
-    border-radius: 40px;
-    position: relative;
-    margin-right: 26px;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly span {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #ccc;
-    border-radius: 40px;
-    transition: 0.25s;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly input {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    margin: 0;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-    width: 43px;
-    height: 43px;
-    border-radius: 100%;
-    background-color: #fff;
-    transition: 0.25s;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly input:checked {
-    transform: translatex(40px);
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly input:checked + span {
-    background-color: #b00000;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .sec3-monthly .discount {
-    background-color: #ffe87a;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: small;
-  }
-  body main .sec1-hero .sec3 .sec3-group1 .basic-pre {
-    display: flex;
-    justify-content: space-evenly;
-    width: 600px;
-    font-size: 30px;
-    font-weight: 600;
-    border-bottom: 2px solid #808080;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-boss {
-    margin: 0 115px;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
-    height: 716px;
-    width: 299px;
-    border: 2px solid #808080;
-    padding: 34px;
-    border-radius: 10px;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-small-para {
-    font-size: 12px;
-    margin: 11px 0 28px;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .flex-item-big-cash {
-    font-size: 42px;
-    font-weight: 600;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .per-mon {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item .hero-btn {
-    width: 228px;
-    height: 50px;
-    background: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 8px;
-    margin: 35px 0;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul {
-    list-style: none;
-    height: 336px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li {
-    color: #808080;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .sec3 .sec3-group2-flex-container .sec3-group2-flex-item ul li img {
-    margin-right: 24px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 {
-    display: flex;
-    margin-bottom: 84px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left {
-    width: 597px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-top-box {
-    padding: 45px 0 24px;
-    background-image: url("./images/Quote Mark.png");
-    background-repeat: no-repeat;
-    width: 515px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-top-box p {
-    font-size: 48px;
-    font-weight: 800;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
-    width: 350px;
-    height: 428px;
-    box-shadow: 0 0 7px #808080;
-    padding: 0 32px 0 32px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .jbnl-logo-img {
-    margin-left: 40px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div {
-    padding-left: 6px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right {
-    margin-left: 30px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
-    width: 445px;
-    height: 340px;
-    box-shadow: 0 0 7px #808080;
-    padding: 40px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .jbnl-logo-img {
-    margin-left: 40px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div {
-    padding-left: 20px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .bigger-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
-    width: 350px;
-    height: 276px;
-    box-shadow: 0 0 7px #808080;
-    padding: 0 32px;
-    margin-top: 32px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .jbnl-logo-img {
-    margin-left: 40px;
-    height: 110px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark {
-    display: flex;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark .stubborn-quote-img {
-    width: 20px;
-    height: 20px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div {
-    padding-left: 20px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div p {
-    line-height: 32px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div h3 {
-    color: #18191f;
-    margin-top: 24px;
-  }
-  body main .sec1-hero .sec4 .sec4-group1 .sec4-group1-right .smaller-box .stubborn-quote-mark div .sec4-job {
-    color: #808080;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 {
-    height: 240px;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left {
-    width: 50%;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-big-text {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 64px;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-left .sec4-group1-left-small-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #18191f;
-    padding: 20px 5px 30px 0;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right {
-    width: 50%;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos {
-    width: 594px;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
-    width: 125px;
-    height: 120px;
-    margin: 0 70px 0 0;
-  }
-  body main .sec1-hero .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-stubborn-img {
-    width: 125px;
-    height: 50px;
-  }
-  body main .sec1-hero .sec5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 100px;
-    height: 432px;
-    background-color: #e5ecf5;
-    position: relative;
-  }
-  body main .sec1-hero .sec5 h1 {
-    font-size: 64px;
-    width: 1024px;
-    text-align: center;
-  }
-  body main .sec1-hero .sec5 .hero-button {
-    text-decoration: none;
-    margin-top: 40px;
-    width: 208px;
-    height: 48px;
-    border-radius: 8px;
-    padding: 12px;
-    background-color: #b00000;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  body main .sec1-hero .sec5 .hero-button img {
-    margin-right: 10px;
-  }
-  body main .sec1-hero .sec5 .hero-button span {
-    font-size: 14px;
-  }
-  body main .sec1-hero .sec5 .hero-button:hover {
-    background-color: #3d0101;
-    transition: 2s;
-    transform: translatey(20px);
-  }
-  body main .sec1-hero .sec5 .triangle-one {
-    width: 40px;
-    height: 40px;
-    display: block;
-    border-left: 20px solid transparent;
-    border-right: 20px solid #b00000;
-    border-bottom: 20px solid #b00000;
-    border-top: 20px solid transparent;
-    position: absolute;
-    left: 450px;
-    top: 0;
-  }
-  body main .sec1-hero .sec5 .triangle-two {
-    width: 72px;
-    height: 72px;
-    display: block;
-    border-left: 36px solid transparent;
-    border-right: 36px solid #b00000;
-    border-bottom: 36px solid #b00000;
-    border-top: 36px solid transparent;
-    position: absolute;
-    right: -30px;
-    bottom: 50px;
-  }
-  body main .sec1-hero .sec5 .triangle-three {
-    width: 40px;
-    height: 40px;
-    display: block;
-    border-left: 20px solid #b00000;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #b00000;
-    border-top: 20px solid transparent;
-    position: absolute;
-    bottom: 150px;
-    left: -20px;
-  }
-  body main .sec1-hero .sec5:hover .triangle-three {
-    transform: translatey(150px);
-    transition: 2s;
-  }
-  body main .sec1-hero .sec5:hover .triangle-two {
-    transform: rotate(360deg);
-    transition: 3s;
-  }
-  body main .sec1-hero .sec5:hover .triangle-one {
-    transform: translatex(500px);
-    transition: 3s;
   }
   body main .sec2 {
     margin: 0 0 30px;
@@ -2426,7 +1495,8 @@ body footer .copy-down p {
     flex-direction: column;
   }
   body footer .footer-nav-container .footer-logo-group {
-    width: 270px;
+    width: 380px;
+    height: 190px;
   }
   body footer .footer-nav-container .footer-logo-group p {
     line-height: 20px;
@@ -2441,7 +1511,6 @@ body footer .copy-down p {
     margin-right: 20px;
   }
   body footer .footer-nav-container .foot-nav-item-group .footer-nav-items li {
-    list-style: none;
     margin-top: 10px;
     font-size: 12px;
   }
@@ -2449,15 +1518,10 @@ body footer .copy-down p {
     width: 144px;
   }
   body footer .footer-nav-container .foot-nav-item-group .footer-nav-stub li {
-    list-style: none;
     margin-top: 10px;
     font-size: 12px;
   }
   body footer .copy-down {
     font-size: 13px;
-  }
-  body footer .copy-down p {
-    display: flex;
-    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
