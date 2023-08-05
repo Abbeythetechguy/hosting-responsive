@@ -1618,7 +1618,7 @@ body footer .copy-down p {
     padding: 0 20px;
   }
   body main .sec1-hero .hero-left .hero-button-container .hero-button {
-    font-size: 13px;
+    font-size: 12px;
   }
   body main .sec1-hero .hero-right {
     position: relative;
@@ -2113,7 +2113,7 @@ body footer .copy-down p {
     width: 100%;
     height: 160px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   body main .sec2 .sec2-group1-container .sec2-group1-left .sec2-group1-left-big-text {
     text-align: left;
@@ -2378,7 +2378,7 @@ body footer .copy-down p {
     justify-content: center;
   }
   body main .sec4 .sec4-group2 .sec4-group1-container .sec4-group1-right .sec4-logos .sec4-logos-group1 .logos-img {
-    width: 65px;
+    width: 75px;
     height: 70px;
     margin: 0 20px 0 0;
   }
