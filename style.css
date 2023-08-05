@@ -2138,7 +2138,7 @@ body footer .copy-down p {
     justify-content: center;
   }
   body main .sec2 .sec2-group1-container .sec2-group1-right .sec2-logos .sec2-logos-group1 .logos-img {
-    width: 70px;
+    width: 90px;
     height: 50px;
     margin: 0 1px;
   }
@@ -2210,8 +2210,8 @@ body footer .copy-down p {
   }
   body main .sec3 .sec3-group2-flex-container .sec3-group2-flex-item {
     height: 516px;
-    width: 240px;
-    padding: 14px;
+    width: 260px;
+    padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #b00000;
   }
@@ -2271,7 +2271,7 @@ body footer .copy-down p {
   }
   body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box {
     width: 250px;
-    height: 370px;
+    height: 390px;
     padding: 0 20px;
   }
   body main .sec4 .sec4-group1 .sec4-group1-left .group1-left-box .stubborn-quote-mark .stubborn-quote-img {
@@ -2296,7 +2296,7 @@ body footer .copy-down p {
   }
   body main .sec4 .sec4-group1 .sec4-group1-right .bigger-box {
     width: 250px;
-    height: 300px;
+    height: 320px;
     padding: 15px;
     margin-top: 32px;
   }
@@ -2319,7 +2319,7 @@ body footer .copy-down p {
   }
   body main .sec4 .sec4-group1 .sec4-group1-right .smaller-box {
     width: 250px;
-    height: 256px;
+    height: 270px;
     box-shadow: 0 0 7px #808080;
     padding: 0 15px;
     margin-top: 32px;
