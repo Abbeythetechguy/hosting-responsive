@@ -2136,12 +2136,13 @@ body {
                 display: flex;
                 flex-wrap: wrap-reverse;
                 margin-bottom: 50px;
-                height: 700px;
+                height: 600px;
                 padding: 0;
 
                 .hero-left {
                     // border: 1px solid blue;
                     width: 100%;
+                    padding-bottom: 1px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -2169,27 +2170,10 @@ body {
                         font-weight: 400;
                         color: #808080;
                         line-height: 20px;
-                        width: 230px;
+                        width: 290px;
                         padding: 0 20px;
                     }
 
-                    .hero-button-container {
-                        display: none;
-
-                        .hero-button {
-                            margin-right: 24px;
-                            width: 130px;
-                            padding: 10px 10px;
-                            font-size: 13px;
-                            display: flex;
-                            align-items: center;
-                        }
-
-                        .hero-btn {
-                            width: 130px;
-                            padding: 10px;
-                        }
-                    }
                 }
 
                 .hero-right {
@@ -2198,6 +2182,7 @@ body {
                     height: 300px;
                     background-size: cover;
                     // border: 1px solid red;
+                    margin: 0;
 
                     .triangle-one {
                         display: none;
@@ -2211,34 +2196,6 @@ body {
                         display: none;
                     }
 
-                    .hero-button-container {
-                        display: flex;
-                        align-items:center ;
-                        border: 1px solid red;
-                        justify-content: center;
-                        font-size: 14px;
-                        position: absolute;
-
-                        .hero-button {
-                            text-decoration: none;
-                            margin-right: 24px;
-                            width: 95px;
-                            // height: 48px;
-                            display: inline-block;
-                            border-radius: 8px;
-                            padding: 10px 20px;
-                            background-color: #b00000;
-                            color: white;
-                        }
-
-                        .hero-btn {
-                            width: 120px;
-                            padding: 10x;
-                            background: #ffffff;
-                            border: 1px solid #000000;
-                            border-radius: 8px;
-                        }
-                    }
                 }
 
                 .sec2 {
@@ -2859,13 +2816,13 @@ body {
                     .sec2-group1-left {
                         display: block;
                         width: 100%;
-                        height: 290px;
+                        height: 170px;
                         flex-wrap: wrap;
                         // border: 1px solid red;
                         // background-color: blue;
 
                         .sec2-group1-left-big-text {
-                            text-align: center;
+                            text-align:left;
                             font-size: 25px;
                             font-weight: 800;
                             line-height: 34px;
@@ -2873,11 +2830,11 @@ body {
 
                         .sec2-group1-left-small-text {
                             // border: 1px solid red;
-
+                            text-align:left;
                             font-size: 12px;
                             font-weight: 400;
                             line-height: 20px;
-                            padding: 10px 20px 0;
+                            padding: 10px 0;
                         }
                     }
 
@@ -2921,10 +2878,11 @@ body {
                     // border: 1px solid red;
 
                     .sec2-flex-items {
-                        width: 240px;
-                        height: 180px;
+                        width: 260px;
+                        height: 200px;
                         border: 1px solid red;
                         border-radius: 20px;
+                        padding: 15px;
                         background-color: #b0000010;
                         margin: 10px 0;
 
@@ -3043,6 +3001,7 @@ body {
 
                             li {
                                 color: #808080;
+                                font-size: 13px;
                                 display: flex;
                                 align-items: center;
 
@@ -3282,7 +3241,7 @@ body {
 
         footer {
             height: 550px;
-            padding: 10px 10px;
+            padding: 10px 20px;
 
             .footer-nav-container {
                 margin-bottom: 60px;
