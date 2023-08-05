@@ -724,7 +724,6 @@ body footer .copy-down p {
 @media screen and (max-width: 1024px) {
   body {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid red;
   }
   body header {
     display: flex;
@@ -1495,8 +1494,9 @@ body footer .copy-down p {
     flex-direction: column;
   }
   body footer .footer-nav-container .footer-logo-group {
-    width: 380px;
+    width: 350px;
     height: 190px;
+    border: 1px solid white;
   }
   body footer .footer-nav-container .footer-logo-group p {
     line-height: 20px;

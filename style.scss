@@ -944,7 +944,7 @@ body {
 @media screen and (max-width:1024px) {
     body {
         font-family: Tahoma, Geneva, Verdana, sans-serif;
-        border: 1px solid red;
+        // border: 1px solid red;
 
         header {
             // border: 1px solid red;
@@ -2053,9 +2053,9 @@ body {
                 // border: 1px solid white;
 
                 .footer-logo-group {
-                    width: 380px;
+                    width: 350px;
                     height: 190px;
-                    // border: 1px solid white;
+                    border: 1px solid white;
 
                     p {
                         line-height: 20px;
